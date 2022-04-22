@@ -26,6 +26,25 @@ Input:
 time: time length of the simulation (in milliseconds), same to the time used in PlotWholeCellCurrent.m.
 ```
 
+`PlotSpikePeakValue.m` describes the characterization of the action potential in parameter space. It calculates the positive and negative spike amplitude, and the time difference between the positive and negative spike as functions of `param_name_1` and `param_name_2`.
+
+
+Input:
+
+```
+time: time length of the simulation (in milliseconds), same to the time used in PlotWholeCellVoltage.m.
+
+param_name_1: name of the y-axis parameter.
+
+param_span_1: value range of the y-axis parameter.
+
+param_name_2: name of the x-axis parameter.
+
+param_span_2: value range of the x-axis parameter.
+
+positive_spike_thres: the threshold of a positive spike.
+```
+
 ***
 
 `AVLModel.m` includes all of the ordinary differential equations of AVL model.
